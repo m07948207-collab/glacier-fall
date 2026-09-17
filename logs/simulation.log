@@ -1,0 +1,45 @@
+============================================================
+Glacier Ice-Rock Fall Simulation
+============================================================
+[Config] {
+  "mass": 500.0,
+  "height": 25.0,
+  "slope_angle": 35.0,
+  "friction": 0.3,
+  "restitution": 0.5,
+  "dt": 0.0001,
+  "t_max": 10.0,
+  "slope_length": 40.0,
+  "obstacle_x": 27.77,
+  "obstacle_y": 2.06,
+  "gravity": 9.81
+}
+
+[Analytical] Computing baseline...
+[Analytical] a = 3.2160 m/s^2
+[Analytical] t_slope = 4.9875 s
+[Analytical] v_impact = 16.0400 m/s
+[Analytical] mgh = 122625.00 J
+[Analytical] friction_work = 48215.29 J
+[Analytical] KE_impact = 64320.41 J
+
+[Sim] Running PyChrono simulation...
+[Sim] Creating ChSystemNSC...
+[Sim] Block initial pos: (0.00, 25.00)
+[Sim] Obstacle pos: (27.77, 2.06)
+[Sim] Starting time stepping...
+[Sim] step=10000, t=1.0000, y=20.0945, vy=-9.8100, contacts=0
+[Sim] step=20000, t=2.0000, y=5.3790, vy=-19.6200, contacts=0
+[Sim] step=30000, t=3.0000, y=-19.1465, vy=-29.4300, contacts=0
+[Sim] step=40000, t=4.0000, y=-53.4820, vy=-39.2400, contacts=0
+[Sim] step=50000, t=5.0000, y=-97.6275, vy=-49.0500, contacts=0
+[Sim] step=60000, t=6.0000, y=-151.5829, vy=-58.8600, contacts=0
+[Sim] step=70000, t=7.0000, y=-215.3484, vy=-68.6700, contacts=0
+[Sim] step=80000, t=8.0000, y=-288.9239, vy=-78.4800, contacts=0
+[Sim] step=90000, t=9.0000, y=-372.3094, vy=-88.2900, contacts=0
+[Sim] step=100000, t=10.0000, y=-465.5049, vy=-98.1000, contacts=0
+[Sim] Final: t=10.0001s, y=-465.5147, vy=-98.1010
+[Sim] Contact detected: False at t=-1.0000s
+[Sim] Max contacts: 0
+
+[DONE] Output in /root/private_data/glacier_fall/output/
